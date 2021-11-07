@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    grid-template-areas: 'h h h'
+                         'a m a2'
+                         'f f f';
+    grid-template-columns: 30% auto 30%;
+}
+
+/*---------------Header-------------------*/
+header {
+    grid-area: h;
+}
+/*---------------/Header-------------------*/
+
+/*---------------Aside-------------------*/
+aside {
+    grid-area: a;
+    width: 30%;
+    color: #FFFFFF;
+    background-color: #185CC4;
+    text-align: center;
+}
+/*---------------/Aside-------------------*/
+
+/*---------------Aside2-------------------*/
+section {
+    grid-area: a2;
+}
+
+section a button {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    background-color: #185CC4;
+    border: none;
+    padding: 0px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+}
+
+section a button:hover {
+    color: #FFBD38;
+}
+/*---------------/Aside2-------------------*/
+
+/*---------------Footer-------------------*/
+footer {
+    grid-area: f;
+}
+/*---------------/Footer-------------------*/

@@ -1,0 +1,99 @@
+* {
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*------------Classes-----------------*/
+.align {
+  padding: 15px 14px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.block {
+  background-color: #003078;
+  width: 300px;
+}
+
+.imgsize {
+  width: 150px;
+}
+
+.imgsize1 {
+  width: 110px;
+}
+
+.imgsize2 {
+  width: 100px;
+}
+
+/*------------/Classes-----------------*/
+
+/*------------Header-----------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #003078;
+}
+
+header img {
+  width: 261px;
+}
+
+nav {
+  padding: 35px 0px;
+}
+
+nav li { 
+  display: inline;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+li button {
+  color: #FFBD38;
+  background-color: #003078;
+  font-size: 20px;
+  border: 1px solid #FFBD38;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+nav a, nav a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  color: #FFBD38;
+}
+/*------------/Header-----------------*/
+
+/*------------Main-----------------*/
+main section {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+p {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+/*------------/Main-----------------*/
+
+/*------------Footer-----------------*/
+footer {
+  background-color: #003078
+}
+/*------------/Footer-----------------*/
+
+#map { height: 400px;
+width: 400px;
+ }

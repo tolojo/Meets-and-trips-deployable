@@ -1,0 +1,76 @@
+body
+{
+    background-color: #eaedf0;
+    color: #FFBD38;
+    font-size: 16px;
+}
+
+/*---------------Main-------------------*/
+form
+{
+    border: #185CC4 solid 1px;
+    border-radius: 5px;
+    width: 500px;
+    margin: 50px;
+    padding: 50px;
+    background-color: #185CC4;
+}
+
+h1
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+p
+{
+    margin-bottom: 20px;
+}
+
+label
+{
+    color: #FFBD38;
+}
+
+textarea
+{
+    height: 200px;
+    padding: 7px;
+    resize: none;
+    font-size: 14px;
+}
+
+select
+{
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+input[type=submit]
+{
+    font-size: 16px;
+    color: #fff;
+    background-color: #C48917;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=text]
+{
+    width: 100%;
+    padding: 5px;
+}
+
+input[type=text], input[type=datetime-local], select, textarea
+{
+    border: #d6d9dc solid 1px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type=submit]:hover{
+    color: #785207;
+}
+/*---------------/Main-------------------*/
