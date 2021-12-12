@@ -14,7 +14,6 @@ async function logIn() {
         contentType: 'application/json'
     });
     sessionStorage.setItem("userId",user.user_id);
-    alert(user.user_id);
     window.location.href = "home.html";
     } catch (err) {
         document.getElementById("msg").innerText = err.responseJSON.msg;

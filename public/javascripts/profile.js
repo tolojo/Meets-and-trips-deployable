@@ -37,8 +37,8 @@ window.onload = async function () {
     }
 }
 
-function selecionar(car_id){
-    alert(car_id);
+function selecionar(car_id,car_name){
+    alert("Carro escolhido com sucesso");
     sessionStorage.setItem("car_id",car_id);
 
 }

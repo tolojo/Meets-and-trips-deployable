@@ -21,7 +21,7 @@ module.exports.getAllDiscussions = async function () {
 /*For discussion details*/
 module.exports.getDiscussaoByID = async function (id) {
     try {
-        let sql = "Select * from discussoes where disc_id = $1";
+        let sql = "Select * from discussoes inner join utilizador on disc_creator_id = user_id where disc_id = $1";
         let result = await pool.query(sql, [id]);
         let discussoes = result.rows[0];
         return {
