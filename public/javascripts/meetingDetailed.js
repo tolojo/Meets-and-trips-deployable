@@ -10,7 +10,6 @@ window.onload = async function () {
             method: "get",
             dataType: "json"
         });
-        console.log(owner);
 
 
         if (owner == false ) document.getElementById("ePontos").style.display = 'none';
@@ -20,7 +19,7 @@ window.onload = async function () {
             method: "get",
             dataType: "json"
         });
-        console.log(concent);
+  
 
         html += `<section>
 <h3>${concent.conc_nome}</h3>
@@ -41,7 +40,7 @@ document.getElementById("concentracoes").innerHTML = html;
         dataType: "json"
     });
 
-    console.log(inscricoes);
+  
     for(let inscrito of inscricoes){
         
         id_inscritos.push(inscrito.user_id);
@@ -52,9 +51,9 @@ document.getElementById("concentracoes").innerHTML = html;
         <br>
         </section>`;
         document.getElementById("inscritos").innerHTML = html1;
-        console.log(inscrito);
+       
     }
-    console.log(id_inscritos);
+   
 
                 let map = L.map('map').setView([concent.conc_coordenadas.x, concent.conc_coordenadas.y], 13);
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -75,7 +74,7 @@ document.getElementById("concentracoes").innerHTML = html;
                     method: "get",
                     dataType: "json"
                 });
-                console.log(roadtrip);
+                
                 L.Routing.control({
                     waypoints: [
                         L.latLng(roadtrip.conc_coordenadas.x, roadtrip.conc_coordenadas.y),

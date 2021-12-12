@@ -8,9 +8,6 @@ window.onload = async function () {
             method: "get",
             dataType: "json"
         });
-
-        console.log(disc);
-
         html += `<section>
         <h3>${disc.disc_nome}</h3>
         <h3>${disc.disc_descricao}</h3>

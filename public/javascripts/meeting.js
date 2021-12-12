@@ -41,13 +41,13 @@ window.onload = async function () {
                 method: "get",
                 dataType: "json"
             });
-            console.log(presentes.length);
+
             
             if(!presentes) {
                 inscritos = 0;}
                 else inscritos = presentes.length;
             let tipo_concent;
-            console.log(concent.conc_tipo);
+           
 
 
             switch (concent.conc_tipo) {
@@ -62,7 +62,7 @@ window.onload = async function () {
                     break;
             }
             if(concent.conc_estado){
-            console.log(concent.conc_coordenadas.x, concent.conc_coordenadas.y);
+           
             html += `<section>
             <h3>${concent.conc_nome}</h3>
             <p>${concent.conc_descricao}</p>

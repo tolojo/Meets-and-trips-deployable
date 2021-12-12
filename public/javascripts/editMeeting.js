@@ -2,9 +2,6 @@ var user_ID = sessionStorage.getItem('userId');
 let concentId = sessionStorage.getItem('concentId');
 var latleng="";
 window.onload = async function () {
-
-
-
     let data = sessionStorage.getItem('concentId');
     try {
         let html = "";
@@ -63,9 +60,9 @@ async function Atualizar(){
         dataType: "json",
         contentType: "application/json"
     });
-    alert("chegou");
-    window.location.href = "meetingDetailed.html";
     alert("Meeting atualizado com sucesso");
+    window.location.href = "meetingDetailed.html";
+    
     
 }
 catch(err){
