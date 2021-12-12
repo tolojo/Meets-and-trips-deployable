@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/criarMeeting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+  <title>Meets & Trips</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascripts/editMeeting.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/Logo.png">
+    
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="meeting.html">Events</a></li>
+          <li><a href="discussions.html">Discussions</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="perfil.html">Profile</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main id="concentracoes">
+    <form>
+      <h1>Criar Evento</h1>
+
+      <p> <label for="nome">Nome do Evento</label> <input type="text" name="nome" id="nome"></p>
+
+      <p> <label for="data">Data</label> <input type="text" name="data" id="data"></p>
+
+      <p> <label for="abstract">Descrição</label> <input type="text" id="descricao"></p>
+
+      <p> <label for="mapa">Localização</label></p>
+
+      <section id="mapa"></section>
+
+    <!--<p><label for="mapaF" id = "mapaFL">Ponto de destino</label></p>
+      <section id="mapaF"></section>
+    -->
+      <p> <button type="button" onclick="Atualizar()"> Atualizar </button></p>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <section class="wrap">
+      <p class="align">Copyright 2021 - All rights reserved</p>
+      <p class="align">Developed by João Rolo e Tomás Ferreira</a></p>
+    </section>
+  </footer>
+</body>
+
+</html>

@@ -11,7 +11,17 @@ header {
     grid-area: h;
 }
 /*---------------/Header-------------------*/
-
+main{
+    grid-area: m;
+}
+main section{
+    background-color: #003078;
+    color: white;
+}
+h3{
+    color: white;
+    cursor: pointer;
+}
 /*---------------Aside-------------------*/
 aside {
     grid-area: a;
@@ -27,7 +37,7 @@ section {
     grid-area: a2;
 }
 
-section a button {
+.button {
     color: #FFFFFF;
     background-color: #FFFFFF;
     font-size: 20px;
@@ -48,6 +58,11 @@ section a button:hover {
 
 /*---------------Footer-------------------*/
 footer {
+    background-color: #003078;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     grid-area: f;
 }
 /*---------------/Footer-------------------*/

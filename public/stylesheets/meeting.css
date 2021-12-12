@@ -3,7 +3,6 @@ body{
     grid-template-areas: 'h h h'
                          'a m a2'
                          'f f f';
-    grid-gap: 10px;
     grid-template-columns: 30% auto 30%;
 }
 
@@ -30,19 +29,26 @@ main > section{
 h3 {
     color: #FFFFFF;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 h3:hover {
     color: #C48917;
+    transition-duration: 0.4s;
 }
 /*---------------/Main-------------------*/
 
 /*---------------Aside-------------------*/
 aside {
-	width: 30%;
+	width: 50%;
     align-content: center;
     grid-area: a2;
-    margin-left: 80px;
+
+}
+
+.button{
+    background-color: #FFBD38;
+    color: white;
 }
 
 aside a {
@@ -60,6 +66,7 @@ aside a button {
     padding: 0px 10px;
     cursor: pointer;
     border-radius: 5px;
+    width: 50%;
 }
 
 aside a button:hover {
@@ -69,6 +76,11 @@ aside a button:hover {
 
 /*---------------Footer-------------------*/
 footer {
+    background-color: #003078;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     grid-area: f;
 }
 /*---------------/Footer-------------------*/

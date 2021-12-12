@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/criarMeeting.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    <title>Meets & Trips</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/criarMeeting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+  <title>Meets & Trips</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
+    crossorigin="" />
 
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" 
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascripts/addDiscussion.js"></script>
+
 </head>
 
 <body>
-    <header>
-        <img src="images/Logo.png">
+  <header>
+    <img src="images/Logo.png">
     
-        <section>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="meeting.html">Events</a></li>
-              <li><a href="discussions.html">Discussions</a></li>
-              <li><a href="store.html">Store</a></li>
-              <li><button type="button">Log In</button></li>
-            </ul>
-          </nav>
-        </section>
-    </header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="meeting.html">Events</a></li>
+          <li><a href="discussions.html">Discussions</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="perfil.html">Profile</a></li>
+        </ul>
+      </nav>
+      
+</header>
 
-    <main id="concentracoes">
-        <form>
-            <h1>Criar Discussão</h1>
-            
-            <p> <label for="nome">Nome da Discussão</label> <input type="text" name="nome" id="nome"></p>
+  <main id="concentracoes">
+    <form>
+      <h1>Criar Discussão</h1>
 
-            <p> <label for="nome">Tags</label> <input type="text" name="tags" id="tags"></p>
-    
-            <p> <label for="abstract">Descrição</label> <textarea maxlength="500"></textarea></p>
+      <p> <label for="nome">Nome da Discussão</label> <input type="text" name="nome" id="nome"></p>
 
-            <p> <label for="abstract">Utilizador a adicionar</label> <textarea maxlength="500"></textarea></p>
+      <p> <label for="nome">Tags</label> <input type="text" name="tags" id="tags"></p>
 
-            <p> <input type="submit" value="Submit"> </p>
-    
-        </form>
+      <p> <label for="abstract">Descrição</label> <textarea maxlength="500" id="descricao"></textarea></p>
 
-    </main>
+      <p> <label for="nome">Utilizador a adicionar</label><input type="text" name="nomeUserC" id="nomeUserC"> <button
+          type="button" onclick="Convidar()"> Convidar </button></p>
 
-    <footer>
-        <section class="wrap">
-          <p class="align">Copyright 2021 - All rights reserved</p>
-          <p class="align">Developed by João Rolo e Tomás Ferreira</a></p>
-        </section>
-    </footer>
+      <p> <button type="button" onclick="RegistarDisc()"> Publicar </button> </p>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <section class="wrap">
+      <p class="align">Copyright 2021 - All rights reserved</p>
+      <p class="align">Developed by João Rolo e Tomás Ferreira</a></p>
+    </section>
+  </footer>
 </body>
 
 </html>

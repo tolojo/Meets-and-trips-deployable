@@ -6,10 +6,6 @@ const Pool = pg.Pool
 const pool = new Pool({
     connectionString,
     max: 20,
-    ssl: {
-        require: true, 
-        rejectUnauthorized: false
-    }
     
 })
 
